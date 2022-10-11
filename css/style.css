@@ -1,0 +1,284 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     font-family: 'Roboto', sans-serif;
+     display: flex;
+     flex-direction: column;
+     min-height:100vh;
+}
+.wrapper {
+     flex: 1;
+}
+
+
+nav {
+     display: flex;
+     justify-content: center;
+     
+}
+nav a{
+     text-decoration: none;
+}
+ul {
+     display: flex;
+     gap: 10px;
+     padding-inline-start: 0px;
+}
+li {
+     display: flex;
+     text-decoration: none;
+     color: black;
+     font-family: cursive;
+     font-size: larger;
+     flex-direction: row;
+}
+li:hover{
+     background-color: #e1b0f4;
+     border-radius: 25%;
+}
+/******************************************
+/* index.html
+/*******************************************/
+.sectionAimg {
+     min-width: 70%;
+     min-height: 60%;
+     position: relative;
+}
+
+.sectionA {
+     display: flex;
+     flex-direction: row; 
+
+}
+
+.sectionA div {
+     position: absolute;
+     display:flex;
+     flex-direction: column;
+     justify-content:flex-start;
+     margin-left: 10%;
+     margin-right: 2%;
+}
+.sectionA div h1 {
+     font-family: 'Roboto', sans-serif;
+     font-size: xx-large;
+}
+.btn {
+     background: black;
+     color: antiquewhite;
+     padding: 5%;
+     margin-top: 5%;
+     font-family: 'Roboto', sans-serif;
+     font-size: medium;
+     border-radius: 15%;
+}
+.btn:hover {
+     background-color: #e1b0f4;
+     color: #333;
+ 
+ }
+  
+.sectionB {
+     display:flex;
+     margin-top: 5%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; 
+}
+.sectionB div {
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-right: 2%;
+     padding: 1%;
+}
+
+.sectionBimg{
+     max-height: 4em;
+     max-width: 4em;
+      
+}
+
+.sectionbB {
+     display: none; 
+}
+
+/******************************************
+/* about.html
+/*******************************************/
+.aboutAimg {
+     margin: 5% 5% 5% 5%;
+     max-height: 30em;
+     max-width: 20em;
+     border-radius: 10%;
+}
+.aboutA{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     margin: 5%;
+}
+
+.aboutBH {
+     text-align: center;
+}
+.aboutB {
+     display: flex; 
+     flex-wrap: wrap;
+     margin: 0% 2% 0% 2%;  
+}
+
+.aboutB div {
+     display:flex;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+     
+}
+.aboutBNum {
+     border: #e1b0f4 3px solid;
+     color: #e1b0f4;
+     text-align: center;
+     height: 2em;
+     width: 2em;
+     border-radius: 50%;
+     padding-top: .25em;
+}
+.aboutC {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+.aboutCDiv{
+     width: 30%;
+     text-align: center;
+     align-items: center;
+     border-bottom: #e1b0f4 2px solid;
+     padding-bottom: 5%;
+     padding-top: 5%;
+     margin: 0 5% 0 5%;
+}
+
+
+
+
+/******************************************
+/* services.html
+/*******************************************/
+.servicesIntro {
+     text-align: center;
+}
+.servicesCoverimg {
+     align-items: center;
+     width: 30%;
+     height: 40%;
+}
+.priceTables {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+     border-bottom: 1px lightslategray solid;
+     padding-bottom: 3%;
+}
+.priceTables p {
+     margin: 0% 3% 3% 3%;
+}
+table {
+     font-family: "roboto";
+     border-collapse: collapse;
+     width: 70%;
+     
+   }
+   
+   td, th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+   }
+   
+   tr:hover {
+     background-color: #e1b0f4;
+   }
+footer {
+     padding-top: 1em;
+     background: black;
+     color: white;
+     text-align: center;
+     width: 100%;
+     display: flex; 
+     justify-content: center;
+     align-items: center;
+     font-size: smaller;
+ }
+
+.contactInfo {
+     flex-direction: column;
+     width: 50%;
+     height: 100%;
+     padding-bottom: 3%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (min-width: 650px) {
+     .sectionAimg {
+          max-width: 70%;
+          max-height: auto;
+          position: relative;
+     }
+     
+     .sectionA {
+          display: flex;
+          flex-direction:row-reverse; 
+          border: #e1b0f4 2px solid;
+          height:60%;
+     
+     }
+     
+     .sectionA div {
+          position: relative;
+          display:flex;
+          flex-direction: column;
+          justify-content:flex-start;
+          margin-left: 10%;
+          margin-right: 2%;
+     }
+     .aboutB {
+          flex-direction: row; 
+          
+     }
+     .aboutB {
+          flex-wrap: nowrap;
+          justify-content: center;
+          
+     }
+     .aboutB div {
+          max-width: 30%;
+          margin: 2%;
+     }
+   }

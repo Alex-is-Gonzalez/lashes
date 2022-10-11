@@ -145,6 +145,7 @@ li:hover{
 }
 .aboutB {
      display: flex; 
+     flex-direction: column;
      flex-wrap: wrap;
      margin: 0% 2% 0% 2%;  
 }
@@ -154,7 +155,8 @@ li:hover{
      flex-direction: column;
      text-align: center;
      align-items: center;
-     text-align: center;     
+     text-align: center;  
+     justify-content: center;   
 }
 .aboutBNum {
      border: #e1b0f4 3px solid;
@@ -164,6 +166,7 @@ li:hover{
      width: 2em;
      border-radius: 50%;
      padding-top: .25em;
+     justify-content: center;
 }
 .aboutC {
      display: flex;
@@ -192,7 +195,7 @@ li:hover{
 }
 .servicesCoverimg {
      align-items: center;
-     width: 30%;
+     width: 20%;
      height: 25%;
 }
 .priceTables {

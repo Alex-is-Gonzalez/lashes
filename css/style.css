@@ -211,6 +211,7 @@ li:hover{
 }
 .priceTables p {
      margin: 0% 3% 3% 3%;
+     width: 50%;
 }
 table {
      font-family: "roboto";
